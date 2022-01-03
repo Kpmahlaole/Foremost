@@ -1,2 +1,9 @@
 # Foremost
-Policy administration system
+Policy administration systems
+
+Create Member Profiles
+Open New Policy
+Capture Payment
+Retrive Payments
+Payment Updates
+Capture Claims
