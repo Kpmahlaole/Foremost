@@ -24,10 +24,10 @@
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
             <li><a class="dropdown-item" href="newpolicy.php">New Business</a></li>
             <li><a class="dropdown-item" href="searchpol.php">Search Policy</a></li>
-            <li><a class="dropdown-item" href="payment.php">Payment</a></li>
+            <li><a class="dropdown-item" href="payment.php">Payments</a></li>
             <li><a class="dropdown-item" href="searchpay.php">Search Payment</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="settings.php">Foremost Helpdesk</a></li>
           </ul>
         </li>
     </div>
