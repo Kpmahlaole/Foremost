@@ -8,16 +8,6 @@
   Capture a payment
 </button>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchpayment">
-  Search payment
-</button>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#logaquery">
-  Log a query
-</button>
-
 <!-- captureapayment -->
 <div class="modal fade" id="captureapayment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -55,7 +45,7 @@
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
 
-</form>
+
 
       </div>
       <div class="modal-footer">
@@ -65,24 +55,6 @@
     </div>
   </div>
 </div>
-
-<!-- searchpayment -->
-<div class="modal fade" id="searchpayment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">search payment</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+</form>
 
 <?php require_once"inc/footer.php"?>
