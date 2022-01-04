@@ -28,6 +28,7 @@
 
 			<a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a>		
 			<a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+			
 			<div class="nav-item dropdown">
 				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action">Katlego Mahlaole<b class="caret"></b></a>
 				<div class="dropdown-menu">
@@ -38,6 +39,7 @@
 					<a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </nav>
