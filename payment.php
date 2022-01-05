@@ -18,8 +18,7 @@
       </div>
       <div class="modal-body">
   
-<form>
-
+<form action="cappayment.php" method="post">
 <div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon3">Policy Number:</span>
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
@@ -45,12 +44,12 @@
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
 
-
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Process</button>
+        <button type="submit" class="btn btn-success">Process</button>
+        
+        
       </div>
     </div>
   </div>
