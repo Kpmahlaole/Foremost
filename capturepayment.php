@@ -32,13 +32,13 @@ $result = mysqli_query($conn,"SELECT * FROM payment");
 <?php
 if (mysqli_num_rows($result) > 0) {
 ?>
-  <table boder>
+  <table>
   <tr>
-    <td>Policy Number</td>
-    <td>Receipt Number</td>
-    <td>Receipt Date</td>
-    <td>Amount</td>
-    <td>Comments</td>
+    <td><b>Policy Number</b></td>
+    <td><b>Receipt Number</b></td>
+    <td><b>Receipt Date</b></td>
+    <td><b>Amount</b></td>
+    <td><b>Comments</b></td>
   </tr>
   
 <?php
