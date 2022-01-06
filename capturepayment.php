@@ -22,6 +22,14 @@ include_once 'inc/header.php';
   <input type="submit" value="Submit">
 </form>
 
+
+<br><br><br>
+<h2>Search Policy</h2>
+<form action="search.php" method="post">
+  <input type="search" class="form-label" id="policynumber" name="policynumber" required>
+  <input type="submit" value="Search">
+</form>
+
 <br><br><br>
 
 <?php
