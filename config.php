@@ -2,13 +2,15 @@
 
 session_start();
 
-$host = "localhost"; /* Host name */
-$user = "root"; /* User */
-$password = ""; /* Password */
-$dbname = "foremost"; /* Database name */
+$host = "localhost";
+$user = "root";
+$password = "";
+$dbname = "foremost";
 
 $con = mysqli_connect($host, $user, $password,$dbname);
-// Check connection
+
 if (!$con) {
  die("Connection failed: " . mysqli_connect_error());
 }
+
+?>

@@ -1,0 +1,70 @@
+<?php 
+$title = 'Capture Payment';
+include_once 'inc/header.php';
+?>
+
+<h1>Capture Payment</h1>
+       <form action="cappayment.php" method="post">
+  <label for="fname">Policy Number:</label>
+  <input type="text" class="form-label" id="policynumber" name="policynumber" required><br>
+  
+  <label for="lname">Receipt Number:</label>
+  <input type="text" id="receiptnumber" name="receiptnumber"><br>
+  
+  <label for="lname">Receipt Date:</label>
+  <input type="date" id="receiptdate" name="receiptdate"><br>
+  
+  <label for="lname">Amount:</label>
+  <input type="text" id="amount" name="amount"><br>
+  
+  <label for="lname">Comments:</label>
+  <input type="textfield" id="comments" name="comments"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<br><br><br>
+
+<?php
+include_once 'database.php';
+$result = mysqli_query($conn,"SELECT * FROM payment");
+?>
+
+<?php
+if (mysqli_num_rows($result) > 0) {
+?>
+  <table boder>
+  <tr>
+    <td>Policy Number</td>
+    <td>Receipt Number</td>
+    <td>Receipt Date</td>
+    <td>Amount</td>
+    <td>Comments</td>
+  </tr>
+  
+<?php
+$i=0;
+while($row = mysqli_fetch_array($result)) {
+?>
+
+<tr>
+    <td><?php echo $row["policynumber"]; ?></td>
+    <td><?php echo $row["receiptnumber"]; ?></td>
+    <td><?php echo $row["receiptdate"]; ?></td>
+    <td><?php echo $row["amount"]; ?></td>
+    <td><?php echo $row["comments"]; ?></td>
+</tr>
+
+<?php
+$i++;
+}
+?>
+
+</table>
+ <?php
+}
+else{
+    echo "No result found";
+}
+?>
+
+<?php include_once 'inc/footer.php';?>

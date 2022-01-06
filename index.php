@@ -1,12 +1,14 @@
-<?php
-include "config.php";
 
+<?php
+
+$title = 'Index'; 
+
+include "config.php";
 
 if(isset($_POST['but_submit'])){
 
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
-
 
     if ($uname != "" && $password != ""){
 
@@ -30,7 +32,7 @@ if(isset($_POST['but_submit'])){
 <html>
     <head>
         <title>Create simple login page with PHP and MySQL</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href=".../style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="container">
