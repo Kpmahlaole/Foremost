@@ -5,7 +5,7 @@ include_once 'inc/header.php';
 
 <div class="wrapper_payments">
 <?php
-include_once 'database.php';
+include_once 'config.php';
 $result = mysqli_query($conn,"SELECT * FROM payment");
 ?>
 
