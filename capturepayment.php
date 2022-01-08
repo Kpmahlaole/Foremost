@@ -3,76 +3,48 @@ $title = 'Capture Payment';
 include_once 'inc/header.php';
 ?>
 
-<h1>Capture Payment</h1>
-       <form action="cappayment.php" method="post">
-  <label for="fname">Policy Number:</label>
-  <input type="text" class="form-label" id="policynumber" name="policynumber" required><br>
+<div class="wrapper_payments">
+
+
+<h4>Capture Payment</h4>
+<form action="cappayment.php" method="post">
+       
+<label for="policynumber" class="form-label"></label>
+<div class="input-group mb-3">
+<span class="input-group-text" id="policynumber">Policy Number:</span>
+<input type="text" class="form-control" id="policynumber" name="policynumber" required aria-describedby="basic-addon3">
+</div>
+
+<label for="receiptnumber" class="form-label"></label>
+<div class="input-group mb-3">
+<span class="input-group-text" id="receiptnumber">Receipt Number:</span>
+<input type="text" class="form-control" id="receiptnumber" name="receiptnumber" aria-describedby="basic-addon3">
+</div>
   
-  <label for="lname">Receipt Number:</label>
-  <input type="text" id="receiptnumber" name="receiptnumber"><br>
-  
-  <label for="lname">Receipt Date:</label>
-  <input type="date" id="receiptdate" name="receiptdate"><br>
-  
-  <label for="lname">Amount:</label>
-  <input type="text" id="amount" name="amount"><br>
-  
-  <label for="lname">Comments:</label>
-  <input type="textfield" id="comments" name="comments"><br>
+<label for="basic-url" class="form-label"></label>
+<div class="input-group mb-3">
+<span class="input-group-text" id="receiptdate">Receipt Date:</span>
+<input type="date" class="form-control" id="receiptdate" name="receiptdate" aria-describedby="basic-addon3">
+</div>
+
+<label for="basic-url" class="form-label"></label>
+<div class="input-group mb-3">
+<span class="input-group-text" id="amount">Amount:</span>
+<input type="number" class="form-control" id="amount" name="amount" aria-describedby="basic-addon3">
+</div>
+
+<label for="basic-url" class="form-label"></label>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="comments">Comments:</span>
+  <input type="textarea" class="form-control" id="comments" name="comments" aria-describedby="basic-addon3">
+</div>
+
   <input type="submit" value="Submit">
 </form>
+</div>
 
 
-<br><br><br>
-<h2>Search Policy</h2>
-<form action="search.php" method="post">
-  <input type="search" class="form-label" id="policynumber" name="policynumber" required>
-  <input type="submit" value="Search">
-</form>
 
-<br><br><br>
 
-<?php
-include_once 'database.php';
-$result = mysqli_query($conn,"SELECT * FROM payment");
-?>
-
-<?php
-if (mysqli_num_rows($result) > 0) {
-?>
-  <table>
-  <tr>
-    <td><b>Policy Number</b></td>
-    <td><b>Receipt Number</b></td>
-    <td><b>Receipt Date</b></td>
-    <td><b>Amount</b></td>
-    <td><b>Comments</b></td>
-  </tr>
-  
-<?php
-$i=0;
-while($row = mysqli_fetch_array($result)) {
-?>
-
-<tr>
-    <td><?php echo $row["policynumber"]; ?></td>
-    <td><?php echo $row["receiptnumber"]; ?></td>
-    <td><?php echo $row["receiptdate"]; ?></td>
-    <td><?php echo $row["amount"]; ?></td>
-    <td><?php echo $row["comments"]; ?></td>
-</tr>
-
-<?php
-$i++;
-}
-?>
-
-</table>
- <?php
-}
-else{
-    echo "No result found";
-}
-?>
 
 <?php include_once 'inc/footer.php';?>

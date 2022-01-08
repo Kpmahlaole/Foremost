@@ -6,9 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">     
     
-    <title>Foremost</title>
+    <title>FOREMOST</title>
   </head>
   <body>
   <div class="sticky-top">
@@ -25,8 +24,8 @@
             <i class="bi bi-bag-check-fill"></i>&nbsp;Sales
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#" >New Business</a></li>
-            <li><a class="dropdown-item" href="#">Something else</a></li>
+            <li><a class="dropdown-item" href="#" >Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
@@ -37,17 +36,27 @@
             <i class="bi bi-person-check-fill"></i>&nbsp;Service
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="capturepayment.php" >Capture Payment</a></li>
-            <li><a class="dropdown-item" href="viewpayments.php">View Payments</a></li>
+            <li><a class="dropdown-item" href="#" >Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Suggest a function</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
+     
       </ul>
       <form class="d-flex">
+        <p>Your signed in as<strong><i class="bi bi-123"></i></strong></p>
         <button class="btn btn-outline-success" type="submit">Logout</button>
       </form>
     </div>
   </div>
 </nav>
 </div>
+
+
+<div class="fixed-bottom">Foremost powered by Katweb Systems</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
