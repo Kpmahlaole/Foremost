@@ -40,12 +40,13 @@
             <li><a class="dropdown-item" href="capturepayment.php" >Capture Payment</a></li>
             <li><a class="dropdown-item" href="viewpayments.php">View Payments</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Suggest a function</a></li>
+            <li><a class="dropdown-item" href="test.php">Suggest a function</a></li>
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">Logout</button>
+      <form>
+      <?php echo 'singed in as: ' . get_current_user();?>
+        <button class="btn btn-secondary" type="submit">Logout</button>
       </form>
     </div>
   </div>

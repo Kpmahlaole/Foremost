@@ -1,41 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">     
+    
+    <title>Foremost Authenticator</title>
+  </head>
+  <body>
+  
+  <div class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-none">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><strong>Foremost Authenticator</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+  </div>
+</nav>
+</div>
+<hr class="dropdown-divider"></li>
 
-<?php
 
-$title = 'Index'; 
-
-include "config.php";
-
-if(isset($_POST['but_submit'])){
-
-    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
-    $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
-
-    if ($uname != "" && $password != ""){
-
-        $sql_query = "select count(*) as cntUser from users where username='".$uname."' and password='".$password."'";
-        $result = mysqli_query($con,$sql_query);
-        $row = mysqli_fetch_array($result);
-
-        $count = $row['cntUser'];
-
-        if($count > 0){
-            $_SESSION['uname'] = $uname;
-            header('Location: dashboard.php');
-        }else{
-            echo "Invalid username and password";
-        }
-
-    }
-
-}
-?>
-<html>
-    <head>
-        <title>Create simple login page with PHP and MySQL</title>
-        <link href=".../style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="container">
             <form method="post" action="">
                 <div id="div_login">
                     <h1>Login</h1>
@@ -50,7 +40,9 @@ if(isset($_POST['but_submit'])){
                     </div>
                 </div>
             </form>
-        </div>
-    </body>
-</html>
 
+
+    <footer><div class="fixed-bottom">Foremost powered by Katweb Systems</div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

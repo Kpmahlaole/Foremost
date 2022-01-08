@@ -1,3 +1,8 @@
+<?php 
+$title = 'Capture Payment';
+include_once 'inc/header.php';
+?>
+
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -19,7 +24,7 @@ $comments = $mysqli->real_escape_string($_REQUEST['comments']);
 $sql = "INSERT INTO payment (policynumber, receiptnumber, receiptdate, amount, comments) VALUES ('$policynumber', '$receiptnumber', '$receiptdate', '$amount', '$comments')";
 if($mysqli->query($sql) === true){
     echo "Records inserted successfully.";
-    header("location: capturepayment.php");
+    //header("location: capturepayment.php");
                 //exit();
     
     
@@ -30,3 +35,4 @@ if($mysqli->query($sql) === true){
 // Close connection
 $mysqli->close();
 ?>
+<?php include_once 'inc/footer.php';?>
