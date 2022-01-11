@@ -55,7 +55,7 @@ include_once 'inc/header.php';
   
   <div class="col-md-2">
     <label for="validationCustom02" class="form-label">Initial</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" id="validationCustom02" value="" maxlength="2" required>
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -71,7 +71,7 @@ include_once 'inc/header.php';
   
       <div class="col-md-4">
     <label for="validationCustom02" class="form-label">ID Number</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" id="validationCustom02" value="" maxlength="13" required>
     <div class="valid-feedback">
       Voila!
     </div>
@@ -109,16 +109,15 @@ include_once 'inc/header.php';
   
     <div class="col-md-4">
     <label for="validationCustom02" class="form-label">Cell number</label>
-    <input type="tel" class="form-control" id="validationCustom02" value="" required>
+    <input type="tel" class="form-control" id="validationCustom02" value="" maxlength="10" required>
     <div class="valid-feedback">
       Looks great!
     </div>
   </div>
   
-  
     <div class="col-md-4">
     <label for="validationCustom02" class="form-label">Alternative number</label>
-    <input type="tel" class="form-control" id="validationCustom02" value="" required>
+    <input type="tel" class="form-control" id="validationCustom02" value="" maxlength="10" required>
     <div class="valid-feedback">
       Looks great!
     </div>
@@ -152,13 +151,11 @@ include_once 'inc/header.php';
   
       <div class="col-md-2">
     <label for="validationCustom03" class="form-label">Postal Code</label>
-    <input type="text" class="form-control" id="validationCustom03" required>
+    <input type="text" class="form-control" id="validationCustom03" min="10" maxlength="4" required>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
   </div>
-
-
 
   <div class="col-12">
     <div class="form-check">
