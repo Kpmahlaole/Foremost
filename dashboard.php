@@ -1,6 +1,6 @@
 <?php require_once "inc/header.php" ?>
 
-<h3>Hi "Logged in username & Surname"</h3>
+<h3><?php echo "Good day' " . get_current_user();?></h3>
 <div class="wrapper_search">
   <div class="container-sm" >
     <form action="searchresults.php" method="post">

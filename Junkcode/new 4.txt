@@ -1,0 +1,8 @@
+id
+telephonenumber
+email
+streetaddress
+suburb
+city
+province
+countryfull, zipcode, reg_date

@@ -1,0 +1,65 @@
+
+<fieldset>
+<fieldset>
+<legend>Personal Information</legend>
+
+      <label for="nationalid" class="form-label"></label>
+      <input id="nationalid" name="nationalid" type="text" size="3" tabindex="1" maxlength="3" placeholder="National ID">
+
+      <label for="birthday" class="form-label"></label>
+      <input id="birthday" name="birthday" type="text" size="3" tabindex="1" maxlength="3" placeholder="Birthday">
+
+      <label for="age" class="form-label"></label>
+      <input id="age" name="age" type="text" size="3" tabindex="1" maxlength="3" placeholder="age">
+
+      <label for="title" class="form-label"></label>
+      <input id="title" name="title" type="text" size="3" tabindex="1" maxlength="3" placeholder="Title">
+
+      <label for="givenname" class="form-label"></label>
+      <input id="givenname" name="givenname" maxlength="30" placeholder="givenname" min="3" max="30">
+
+      <label for="middleinitial" class="form-label"></label>
+      <input id="middleinitial" name="middleinitial" size="3" tabindex="1" maxlength="3" placeholder="middleinitial" min="1" max="3">
+
+      <label for="surname" class="form-label"></label>
+      <input id="surname" name="surname" size="3" tabindex="3" placeholder="surname" min="3" max="30">
+
+      <label for="gender" class="form-label"></label>
+      <input id="gender" name="gender" type="text" size="6" tabindex="2" maxlength="6" placeholder="gender">
+  </fieldset>
+
+
+<fieldset>
+<label for="middleinitial" class="form-label"></label>
+<input id="telephonenumber" name="telephonenumber" tabindex="1" maxlength="10" placeholder="telephonenumber" min="10" max="10">
+
+<label for="middleinitial" class="form-label"></label>
+<input id="emailaddress" name="emailaddress" type="email" maxlength="100" placeholder="emailaddress">
+
+<br>
+<legend>Contact Information</legend>
+<label for="streetaddress" class="form-label"></label>
+<input id="streetaddress " name="streetaddress " size="30" maxlength="100" placeholder="streetaddress " min="3" max="50">
+
+<label for="suburb" class="form-label"></label>
+<input id="suburb " name="suburb " size="30" maxlength="100" placeholder="suburb " min="3" max="50">
+
+<label for="middleinitial" class="form-label"></label>
+<input id="city" name="city" type="text" size="30" maxlength="50" placeholder="city" min="3" max="50">
+
+<label for="middleinitial" class="form-label"></label>
+<input id="zipcode" name="zipcode" size="5" maxlength="4" placeholder="zipcode" min="4" max="4">
+</fieldset>
+
+<fieldset>
+<legend>Policy Information</legend>
+<input id="policystatus" name="policystatus" type="text" size="10" tabindex="0" maxlength="10" placeholder="policystatus">
+<input id="memberplan " name="memberplan " type="text" size="10" tabindex="0" maxlength="10" placeholder="memberplan">
+<input id="premium " name="premium " type="text" size="10" tabindex="0" maxlength="10" placeholder="premium">
+  <br>
+<input id="dependent1 " name="dependent1 " type="text" size="10" tabindex="0" maxlength="10" placeholder="dependent 1">
+<input id="dependent1relationship " name="dependent1relationship " type="text" size="10" tabindex="0" maxlength="10" placeholder="dependent1relationship">
+   <br>
+<input id="dependent2 " name="dependent2 " type="text" size="10" tabindex="0" maxlength="10" placeholder="dependent 2">
+<input id="dependent2relationship " name="dependent2relationship " type="text" size="10" tabindex="0" maxlength="10" placeholder="dependent2relationship">
+</fieldset>

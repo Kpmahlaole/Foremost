@@ -21,14 +21,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" i class="fa fa-folder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-bag-check-fill"></i>&nbsp;Sales
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="newbusiness.php" >New Business</a></li>
             <li><a class="dropdown-item" href="#">My Performance</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="tap.php">Something else here</a></li>
           </ul>
         </li>
         
@@ -37,16 +37,17 @@
             <i class="bi bi-person-check-fill"></i>&nbsp;Service
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="dashboard.php">Search Party</a></li>
             <li><a class="dropdown-item" href="capturepayment.php" >Capture Payment</a></li>
             <li><a class="dropdown-item" href="viewpayments.php">View Payments</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="test.php">Suggest a function</a></li>
           </ul>
         </li>
-      </ul>
+      </ul
       <form>
-      <?php echo 'singed in as: ' . get_current_user();?>
-        <button class="btn btn-secondary" type="submit">Logout</button>
+      <?php echo 'singed in as: ' . get_current_user();?>&nbsp;
+        <button class="btn btn-secondary" type="button">Logout</button>
       </form>
     </div>
   </div>

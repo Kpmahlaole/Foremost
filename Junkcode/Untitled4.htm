@@ -1,0 +1,102 @@
+<?php
+
+$title = 'New Policy';
+
+include_once 'inc/header.php';
+
+?>
+
+        <style>
+        .wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 960px; /* 2 */
+
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+}
+        </style>
+<div class="wrapper">
+<h1>New Policy</h1>
+
+
+
+<fieldset>
+<fieldset>
+<legend>Personal Information</legend>
+            <form action="insert.php" method="post">
+
+            <label for="title" class="form-label"></label>
+            <select id="title" name="title" type="text" tabindex="1">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+                <option value="Ms">Ms</option>
+                <option value="Prof">Prof</option>
+            </select>
+
+            <label for="middleinitial" class="form-label"></label>
+            <input id="middleinitial" name="middleinitial" size="3" tabindex="1" maxlength="3" placeholder="Initial" min="1" max="3">
+
+            <label for="givenname" class="form-label"></label>
+            <input id="givenname" name="givenname" maxlength="30" placeholder="Given name" min="3" max="30">
+
+            <label for="surname" class="form-label"></label>
+            <input id="surname" name="surname" size="10" tabindex="3" placeholder="surname" min="3" max="30">
+
+<br>
+            <label for="nationalid" class="form-label"></label>
+            <input id="nationalid" name="nationalid" type="text" size="13" tabindex="1" minlength="13" maxlength="13" placeholder="National ID" required>
+
+            <label for="birthday" class="form-label"></label>
+            <input id="birthday" name="birthday" type="date" size="10" tabindex="1" maxlength="10" placeholder="Birthday">
+
+            <label for="age" class="form-label"></label>
+            <input id="age" name="age" type="text" size="3" tabindex="1" maxlength="3" placeholder="age">
+
+
+            <label for="gender" class="form-label"></label>
+            <select id="gender" name="gender" type="text" tabindex="2" maxlength="6" placeholder="gender">
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+
+ </fieldset>
+
+<fieldset>
+<legend>Contact Information</legend>
+<label for="telephonenumber" class="form-label"></label>
+<input type="tel" id="telephonenumber" name="telephonenumber" size="10" maxlength="10" placeholder="phone number " min="10" max="10">
+
+<label for="streetaddress" class="form-label"></label>
+<input type="tel" id="streetaddress" name="streetaddress" size="10" maxlength="10" placeholder="streetaddress" min="10" max="10">
+
+<label for="emailaddress" class="form-label"></label>
+<input type="email" id="emailaddress" name="emailaddress" size="10" maxlength="50" placeholder="emailaddress" min="10" max="10" required>
+
+<label for="suburb" class="form-label"></label>
+<input id="suburb " name="suburb" size="20" maxlength="100" placeholder="suburb " min="3" max="50">
+
+<label for="city" class="form-label"></label>
+<input id="city" name="city" type="text" size="15" maxlength="50" placeholder="city" min="3" max="50">
+
+<label for="province" class="form-label"></label>
+<input id="province" name="province" size="5" maxlength="20" placeholder="province" min="4" max="12">
+
+<label for="countryfull" class="form-label"></label>
+<input id="countryfull" name="countryfull" size="5" maxlength="4" placeholder="countryfull" min="4" max="12">
+
+<label for="zipcode" class="form-label"></label>
+<input id="zipcode" name="zipcode" size="5" maxlength="4" placeholder="zipcode" min="4" max="4">
+<br><br>
+<input type="submit" class="btn btn-primary" name="submit" value="Submit">
+</fieldset>
+</fieldset>
+<br><br><br>
+<br>
+</div>
+<?php include_once 'inc/footer.php';?>

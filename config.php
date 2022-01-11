@@ -1,22 +1,16 @@
 <?php
-
-session_start();
-
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "foremost";
-
-//$host = "sql6.freemysqlhosting.net";
-//$user = "sql6450823";
-//$password = "bq5uI3Pkbc";
-//$dbname = "sql6450823";
-
-
-$con = mysqli_connect($host, $user, $password,$dbname);
-
-if (!$con) {
- die("Connection failed: " . mysqli_connect_error());
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('db_server', 'localhost');
+define('db_username', 'root');
+define('db_password', '');
+define('db_name', 'foremost');
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(db_server, db_username, db_password, db_name);
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-
 ?>

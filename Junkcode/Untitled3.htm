@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="my_field" name="Name" placeholder="Enter Your Name"/>
+<input type="text" id="my_field1" name="Name" placeholder="Enter Your Name"/>
+<input type="text" id="my_field2" name="Name" placeholder="Enter Your Name"/>
+<input type="text" id="my_field3" name="Name" placeholder="Enter Your Name"/>
+<input type="text" id="my_field3" name="Name" placeholder="Enter Your Name"/>
+
+<button onclick="enable()">Edit</button><br>
+<button onclick="disable()">Save</button>
+
+<script>
+    function disable(){
+    document.getElementById("my_field").disabled = "true";
+    document.getElementById("my_field1").disabled = "true";
+    document.getElementById("my_field2").disabled = "true";
+    document.getElementById("my_field3").disabled = "true";
+    document.getElementById("my_field4").disabled = "true";
+    }
+
+    function enable(){
+    document.getElementById("my_field").disabled = "";
+    }
+</script>
+</body>
+</html>

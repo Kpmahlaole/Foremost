@@ -25,22 +25,7 @@
 </div>
 <hr class="dropdown-divider"></li>
 
-
-            <form method="post" action="">
-                <div id="div_login">
-                    <h1>Login</h1>
-                    <div>
-                        <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
-                    </div>
-                    <div>
-                        <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Password"/>
-                    </div>
-                    <div>
-                        <input type="submit" value="Submit" name="but_submit" id="but_submit" />
-                    </div>
-                </div>
-            </form>
-
+<a button type="button" class="btn btn-success" href="dashboard.php">Success</a></button>
 
     <footer><div class="fixed-bottom">Foremost powered by Katweb Systems</div></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

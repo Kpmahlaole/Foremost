@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:TextBox ID="TextBox3" runat="server" placeholder="Date Of Birth" TextMode="Date" onchange="DateSelectionChanged()"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" placeholder="Age"></asp:TextBox>
+    </form>
+    <script type="text/javascript">
+        function DateSelectionChanged() {
+            var today = new Date();
+            var dob = new Date(document.getElementById('<%=TextBox3.ClientID%>').value);
+            var months = (today.getMonth() - dob.getMonth() + (12 * (today.getFullYear() - dob.getFullYear())));
+            document.getElementById('<%=TextBox4.ClientID%>').value = Math.round(months / 12);
+        }
+    </script>
+</body>
+</html>
